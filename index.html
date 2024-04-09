@@ -12,44 +12,61 @@
 </head>
 <body>
     <header class="grid-con">
-        <div id="header-logo" class="col-span-1">
-
+        <h1 class="hidden">Welcome to home of orbitz!</h1>
+        <div id="header-logo" class="col-span-1 l-col-span-1">
+            <img src="img/logo_white.svg" alt="orbitz logo">
         </div>
-        <div class="header-nav col-span-1"></div>
+        <nav class="l-col-start-2 l-col-span-6">
+            <ul class="header-nav-ul">
+                <li><a href="index.html">home</a></li>
+                <li><a href="index.html">products</a></li>
+                <li><a href="index.html">about</a></li>
+                <li><a href="index.html">careers</a></li>
+                <li><a href="index.html">profile</a></li>
+            </ul>
+        </nav>
+        <div class="header-lang-cart l-col-start-11 l-col-span-1">
+            <img src="img/lang.svg" alt="click to select language">
+        </div>
+        <div class="header-lang-cart l-col-start-12 l-col-span-1">
+            <img src="img/cart.svg" alt="click to enter cart">
+        </div>
     </header>
     <main>
         <div class="grid-con welcome">
             <!-- <p class="welcome-text col-span-full justify">bringing adventure and bold flavours <span>together</span></p> -->
-            <p class="welcome-text col-span-1">bringing</p>
-            <div class="col-start-2 col-span-1 welcome-box"></div>
-            <p class="welcome-text col-span-full justify">adventure and bold flavours</p>
-            <div class="col-span-1 welcome-box"></div>
-            <p class="welcome-text col-span-1">together</p>
+            <p class="welcome-text col-span-1 l-col-start-3">bringing</p>
+            <div class="col-start-2 col-span-1 l-col-start-7 l-col-span-3 welcome-box"></div>
+            <p class="welcome-text col-span-full l-col-start-3 justify">adventure and</p>
+            <p class="welcome-text col-span-full l-col-start-3 justify">bold flavours</p>
+            <div class="col-span-1 l-col-start-3 l-col-span-3 welcome-box"></div>
+            <p class="welcome-text col-span-1 l-col-start-6 l-col-span-4" id="text-right">together</p>
             <img src="img/arrow.svg" alt="arrow icon" class="col-span-full" id="arrow-icon">
         </div>
         <div class="grid-con" id="descr-index">
-            <p class="col-span-full p-grad">
+            <p class="col-span-full l-col-start-5 l-col-span-4 p-grad">
                 orbitz continues to delight consumers with its refreshing and unforgettable products
             </p>
-            <p class="col-span-full p-grad">
+            <p class="col-span-full l-col-start-5 l-col-span-4 p-grad">
                 delivering bold flavours and exciting sensory experiences is our main goal
             </p>
-            <p class="col-span-full p-grad">
+            <p class="col-span-full l-col-start-5 l-col-span-4 p-grad">
                 we are known for combining unique flavours with captivating visual appeal
             </p>
         </div>
         <div class="grid-con" id="made4u">
-            <img src="img/star-element.svg" alt="star element" class="col-span-full star-center">
-            <p class="col-span-full p-grad">with the mesmerizing suspended orbs and tantalizing taste profiles, orbitz soft drinks stand out as a truly one-of-a-kind beverage experience</p>
-            <div class="col-span-full" id="made4u-box">
+            <img src="img/star-element.svg" alt="star element" class="col-span-full l-col-start-1 l-col-span-1 star-center">
+            <p class="col-span-full l-col-start-1 l-col-span-7 p-grad accent">with the mesmerizing suspended orbs and tantalizing taste profiles, 
+                orbitz soft drinks stand out as a truly one-of-a-kind beverage experience</p>
+            <div class="col-span-full l-col-start-1 l-col-span-4" id="made4u-box">
                 <p class="p-grad">made for you</p>
             </div>
         </div>
 
         <div class="grid-con" id="ingredients">
-            <img src="img/star-element.svg" alt="star element" class="col-span-full star-small">
-            <h2 class="col-span-1">all <span class="bold-heading">natural</span></h2>
-            <div class="col-span-full ing-list">
+            <img src="img/star-element.svg" alt="star element" class="col-span-full l-hidden star-small">
+            <h2 class="col-span-1 l-col-start-1 l-col-span-2">all <span class="bold-heading">natural</span></h2>
+            <div class="col-span-full l-col-start-6 ing-list">
                 <div class="ingredient">
                     <p class="ingredient-text">vitamins a, c and d</p>
                     <p class="amount">200mg</p>
@@ -74,11 +91,12 @@
         </div>
 
         <div class="grid-con" id="peek">
-            <img src="img/star-element.svg" alt="star element" class="star-small">
-            <h2 class="col-span-full">peek at <br><span class="bold-heading">our products</span></h2>
-            <p class="text-small col-span-full">crafting new flavours at orbitz involves mixing 
+            <img src="img/star-element.svg" alt="star element" class="star-small l-hidden">
+            <h2 class="col-span-full l-col-span-3">peek at <br><span class="bold-heading">our products</span></h2>
+            <p class="text-small col-span-full l-col-start-9">crafting new flavours at orbitz involves mixing 
                 ingredients based on what people like and testing until we nail down a taste that’s both unique and memorable</p>
-            <div class="col-span-full card">
+            <div class="col-span-full underline"></div>
+            <div class="col-span-full l-col-span-7 card">
                 <!-- <img src="img/star-element.svg" alt="star element" class="col-span-full star-small"> -->
                 <svg viewBox="0 0 41 54" fill="none" xmlns="http://www.w3.org/2000/svg" class="card-star">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M34.2963 29.9645L38.8458 28.4474C40.5771 27.8703 40.5771 25.4216 38.8458 24.8445L34.2963 23.3274C29.2237 21.6359 25.4162 17.401 24.2705 12.1787L21.9271 1.49249C21.4902 -0.49655 18.654 -0.49655 18.2172 1.49249L15.8737 12.1787C14.728 17.401 10.9196 21.6359 5.84796 23.3274L1.29847 24.8445C-0.432823 25.4216 -0.432823 27.8703 1.29847 28.4474L5.84796 29.9645C10.9196 31.656 14.728 35.8909 15.8737 41.1132L18.2172 51.7994C18.654 53.7885 21.4902 53.7885 21.9271 51.7994L24.2705 41.1132C25.4162 35.8909 29.2247 31.656 34.2963 29.9645ZM30.4433 4.85083C30.4433 7.52974 32.6152 9.70166 35.2941 9.70166C37.9721 9.70166 40.144 7.53068 40.145 4.85083C40.145 2.17193 37.973 0 35.2941 0C32.6152 0 30.4433 2.17193 30.4433 4.85083Z" fill="#1a1a1a"/>
@@ -92,7 +110,7 @@
                     </svg> 
                 </div>
             </div>
-            <div class="col-span-full card">
+            <div class="col-span-full l-col-start-6 l-col-span-7 card">
                 <!-- <img src="img/star-element.svg" alt="star element" class="col-span-full star-small"> -->
                 <svg viewBox="0 0 41 54" fill="none" xmlns="http://www.w3.org/2000/svg" class="card-star">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M34.2963 29.9645L38.8458 28.4474C40.5771 27.8703 40.5771 25.4216 38.8458 24.8445L34.2963 23.3274C29.2237 21.6359 25.4162 17.401 24.2705 12.1787L21.9271 1.49249C21.4902 -0.49655 18.654 -0.49655 18.2172 1.49249L15.8737 12.1787C14.728 17.401 10.9196 21.6359 5.84796 23.3274L1.29847 24.8445C-0.432823 25.4216 -0.432823 27.8703 1.29847 28.4474L5.84796 29.9645C10.9196 31.656 14.728 35.8909 15.8737 41.1132L18.2172 51.7994C18.654 53.7885 21.4902 53.7885 21.9271 51.7994L24.2705 41.1132C25.4162 35.8909 29.2247 31.656 34.2963 29.9645ZM30.4433 4.85083C30.4433 7.52974 32.6152 9.70166 35.2941 9.70166C37.9721 9.70166 40.144 7.53068 40.145 4.85083C40.145 2.17193 37.973 0 35.2941 0C32.6152 0 30.4433 2.17193 30.4433 4.85083Z" fill="#1a1a1a"/>
@@ -106,7 +124,7 @@
                     </svg> 
                 </div>
             </div>
-            <div class="col-span-full card">
+            <div class="col-span-full l-col-start-3 l-col-span-7 card">
                 <!-- <img src="img/star-element.svg" alt="star element" class="col-span-full star-small"> -->
                 <svg viewBox="0 0 41 54" fill="none" xmlns="http://www.w3.org/2000/svg" class="card-star">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M34.2963 29.9645L38.8458 28.4474C40.5771 27.8703 40.5771 25.4216 38.8458 24.8445L34.2963 23.3274C29.2237 21.6359 25.4162 17.401 24.2705 12.1787L21.9271 1.49249C21.4902 -0.49655 18.654 -0.49655 18.2172 1.49249L15.8737 12.1787C14.728 17.401 10.9196 21.6359 5.84796 23.3274L1.29847 24.8445C-0.432823 25.4216 -0.432823 27.8703 1.29847 28.4474L5.84796 29.9645C10.9196 31.656 14.728 35.8909 15.8737 41.1132L18.2172 51.7994C18.654 53.7885 21.4902 53.7885 21.9271 51.7994L24.2705 41.1132C25.4162 35.8909 29.2247 31.656 34.2963 29.9645ZM30.4433 4.85083C30.4433 7.52974 32.6152 9.70166 35.2941 9.70166C37.9721 9.70166 40.144 7.53068 40.145 4.85083C40.145 2.17193 37.973 0 35.2941 0C32.6152 0 30.4433 2.17193 30.4433 4.85083Z" fill="#1a1a1a"/>
@@ -121,10 +139,11 @@
                     </svg> 
                 </div>
             </div>
+        </div>
     </main>
     <footer>
         <div class="grid-con footer">
-            <div class="col-span-1" id="footer-left">
+            <div class="col-span-1 l-col-span-3" id="footer-left">
                 <ul class="footer-list">
                     <li>home</li>
                     <li>products</li>
@@ -134,15 +153,15 @@
                 </ul>
             </div>
 
-            <div class="col-span-1" id="footer-right">
-                <div id="footer-right">
+            <div class="col-span-1 l-col-span-3" id="footer-right">
+                <div class="footer-right-top">
                 <ul class="footer-list">
                     <li>faq</li>
                     <li>track order</li>
                     <li>support</li>
                 </ul>
                 </div>
-                <div id="footer-small">
+                <div class="footer-small">
                     <ul class="footer-list socials">
                         <li>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,8 +181,12 @@
                     </ul>
                 </div>
             </div>
-            
+            <div class="footer-logo l-col-start-10 l-col-span-3">
+                <img src="img/logo_white.svg" alt="orbitz logo">
+                <p>Orbitz ©2024. All rights reserved</p>
+            </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
