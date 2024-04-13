@@ -711,6 +711,7 @@ input:last-of-type:hover {
         margin: auto 25px;
         padding: 20px;
         border-radius: 50px;
+        transition: background-color .15s ease-out;
     }
     
     .header-nav-ul li:first-of-type {
@@ -720,6 +721,7 @@ input:last-of-type:hover {
     .header-nav-ul li:hover, .header-lang-cart:hover {
         background-color: #fafafa72;
         cursor: pointer;
+        transition: background-color .15s ease-out;
     }
 
     /* .header-lang-cart {
@@ -819,8 +821,13 @@ input:last-of-type:hover {
         left: 40%;
     }
 
+    .footer-list li a, .footer-contact p {
+        transition: all .15s ease-out;
+    }
+
     .footer-list li a:hover, .footer-contact p:hover{
         color: #FF686D;
         cursor: pointer;
+        transition: all .15s ease-out;
     }
 }
