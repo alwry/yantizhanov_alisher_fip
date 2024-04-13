@@ -745,7 +745,7 @@ input:last-of-type:hover {
         height: 57px;
     }
 
-    .welcome-box:nth-last-of-type() {
+    .welcome-box:last-of-type {
         margin-right: 50px;
     }
 
@@ -823,5 +823,4 @@ input:last-of-type:hover {
         color: #FF686D;
         cursor: pointer;
     }
-
 }
