@@ -29,9 +29,34 @@ h2 {
     display: none;
 }
 
-header nav {
+.m-hidden {
     display: none;
 }
+
+header {
+    background-color: #1a1a1a4b;;
+}
+
+.header-nav-ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.header-nav-ul li {
+    margin-bottom: 30px;
+}
+
+.header-nav-ul li:first-of-type {
+    margin-top: 30px
+}
+
+
+/* header nav {
+    display: none;
+} */
 
 .header-lang-cart {
     display: none;
@@ -46,6 +71,10 @@ header nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+#burger {
+    padding: 15px;
 }
 
 .bold-heading {
@@ -510,6 +539,10 @@ input:last-of-type:hover {
     align-items: end;
 }
 
+#features {
+    margin-top: 60px;
+}
+
 .features-prod {
     position: relative;
     background-image: url(../img/product_features.png);
@@ -564,7 +597,7 @@ input:last-of-type:hover {
 }
 
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
     .welcome-text {
         font-size: 48px
     }
@@ -611,21 +644,32 @@ input:last-of-type:hover {
         margin: 50px auto 20px auto;
     }
 
+    .highlight:nth-of-type(1) {
+        left: 35%;
+    }
+    
+    .highlight:nth-of-type(2) {
+        right: 35%;
+    }
+    
+    .highlight:nth-of-type(3) {
+        left: 35%;
+    }
+
 }
 
 
 
 
 @media screen and (min-width: 1200px) {
+
+    .m-hidden {
+        display: flex;
+    }
     .l-hidden {
         display: none;
     }
 
-    header {
-        align-items: center;
-    }
-    
-    
     header nav {
         background-color: #2A2A2A;
         border-radius: 50px;
@@ -634,20 +678,28 @@ input:last-of-type:hover {
         justify-content: center;
         height: 65px;
     }
-    
-    .header-lang-cart {
-        display: block;
+
+    .header-nav-ul {
+        flex-direction: row;
     }
 
-    nav ul {
-        margin: 0;
-        padding: 0;
+    .header-nav-ul li {
+        margin: auto 25px;
+        padding: 20px;
+        border-radius: 50px;
     }
     
-    nav li {
-        display: inline;
-        margin: auto 30px
+    .header-nav-ul li:first-of-type {
+        margin-top: 0
     }
+
+    .header-nav-ul li:hover, .header-lang-cart:hover {
+        background-color: #fafafa72;
+    }
+
+    /* .header-lang-cart {
+        display: block;
+    } */
 
     .main-title {
         font-size: 80px;
@@ -728,5 +780,17 @@ input:last-of-type:hover {
     input:last-of-type {
         width: 100%;
         margin-left: 0;
+    }
+
+    .highlight:nth-of-type(1) {
+        left: 40%;
+    }
+    
+    .highlight:nth-of-type(2) {
+        right: 40%;
+    }
+    
+    .highlight:nth-of-type(3) {
+        left: 40%;
     }
 }

@@ -11,28 +11,30 @@
     <title>orbitz: products</title>
 </head>
 <body>
-    <header class="grid-con">
+    <header>
         <h1 class="hidden">Welcome to home of orbitz!</h1>
-        <div id="header-logo" class="col-span-1 l-col-span-1">
-            <object type="image/svg+xml" data="img/logo_white.svg"></object>
-        </div>
-        <div class="burger col-start-2 t-col-start-7 l-hidden">
-            <object type="image/svg+xml" data="img/burger.svg"></object>
-        </div>
-        <nav class="l-col-start-2 l-col-span-6">
-            <ul class="header-nav-ul">
-                <li><a href="index.html">home</a></li>
-                <li><a href="products.html">products</a></li>
-                <li><a href="index.html">about</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="index.html">profile</a></li>
-            </ul>
-        </nav>
-        <div class="header-lang-cart l-col-start-11 l-col-span-1">
-            <img src="img/lang.svg" alt="click to select language">
-        </div>
-        <div class="header-lang-cart l-col-start-12 l-col-span-1">
-            <img src="img/cart.svg" alt="click to enter cart">
+        <div class="grid-con" id="logo-bruger">
+            <div id="header-logo" class="col-span-1 l-col-span-1">
+                <a href="index.html"><object type="image/svg+xml" data="img/logo_white.svg"></object></a>
+            </div>
+            <div class="burger col-start-2 t-col-start-7 l-hidden">
+                <div id="burger"><object type="image/svg+xml" data="img/burger.svg"></object></div>
+            </div>
+            <nav class="nav-header col-span-full l-col-start-2 l-col-span-7 m-hidden" id="header-ul">
+                <ul class="header-nav-ul">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="index.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="index.html">profile</a></li>
+                </ul>
+            </nav>
+            <div class="header-lang-cart l-col-start-11 l-col-span-1">
+                <img src="img/lang.svg" alt="click to select language">
+            </div>
+            <div class="header-lang-cart l-col-start-12 l-col-span-1">
+                <img src="img/cart.svg" alt="click to enter cart">
+            </div>
         </div>
     </header>
     <main>
@@ -150,5 +152,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 </html>
