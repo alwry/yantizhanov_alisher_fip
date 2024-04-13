@@ -254,7 +254,13 @@ header {
     align-items: center;
     background-color: #1a1a1a;
     border-radius: 50px;
+    transition: all .2s ease-out;
+}
 
+.button:hover {
+    background-color: #fafafa5c;
+    transition: all .2s ease-out;
+    cursor: pointer;
 }
 
 .button-text {
@@ -262,6 +268,8 @@ header {
     display: inline;
     margin-right: 20px;
 }
+
+
 
 .footer-list, .footer-contact {
     font-size: 20px;
@@ -559,6 +567,22 @@ input:last-of-type:hover {
     border-radius: 50px;
     border: 3px solid #FF686D;
     mix-blend-mode: soft-light;
+    animation: highlightAnim 3s ease-in-out infinite;
+    cursor: pointer;
+}
+
+
+
+@keyframes highlightAnim {
+    0% {
+        background-color: #FF686D;
+    }
+    50% {
+        background-color: #fafafa53;
+    }
+    100% {
+        background-color: #FF686D;
+    }
 }
 
 .highlight:nth-of-type(1) {
@@ -695,6 +719,7 @@ input:last-of-type:hover {
 
     .header-nav-ul li:hover, .header-lang-cart:hover {
         background-color: #fafafa72;
+        cursor: pointer;
     }
 
     /* .header-lang-cart {
@@ -793,4 +818,10 @@ input:last-of-type:hover {
     .highlight:nth-of-type(3) {
         left: 40%;
     }
+
+    .footer-list li a:hover, .footer-contact p:hover{
+        color: #FF686D;
+        cursor: pointer;
+    }
+
 }
