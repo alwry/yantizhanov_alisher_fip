@@ -622,6 +622,10 @@ input:last-of-type:hover {
 
 
 @media screen and (min-width: 700px) {
+    body {
+        background-image: url(../img/bg_desktop.png);
+    }
+
     .welcome-text {
         font-size: 48px
     }
